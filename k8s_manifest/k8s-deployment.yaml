@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: hoangphuc0329/tiki-test:main.1
+        image: hoangphuc0329/tiki-test:main.2
         ports:
         - containerPort: 8080
         readinessProbe:
