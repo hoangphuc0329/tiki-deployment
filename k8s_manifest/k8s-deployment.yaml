@@ -4,7 +4,7 @@ metadata:
   name: demo-deployment
   labels:
     app: demo
-  namespace: production    
+  namespace: production
 spec:
   replicas: 2
   strategy:
@@ -22,16 +22,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: metaplan.azurecr.io/gdc/metaplan/g_metaplan_rat_be_aks:v.0.0.61
-        # env:
-        # - name: BE_POSTGRES_HOST
-          # value: "postgres-prd"
-        # - name: BE_POSTGRES_PORT
-          # value: "5432"          
-        # - name: BE_POSTGRES_USERNAME
-          # value: "postgres"
-        # - name: BE_POSTGRES_PASSWORD
-          # value: "Metanet@12345"
+        image: hoangphuc0329/tiki-test:main.1
         ports:
         - containerPort: 8080
         readinessProbe:
